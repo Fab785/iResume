@@ -1,4 +1,170 @@
-<!doctype html> <html lang="en"> <head> <meta charset="utf-8" /> <meta name="viewport" content="width=device-width,initial-scale=1" /> <title>Fabrizio Terribile — Resume</title> <!-- Tailwind --> <script src="https://cdn.tailwindcss.com"></script> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet"> <!-- Custom CSS --> <link rel="stylesheet" href="style.css"> </head> <body class="bg-black text-white font-inter"> <!-- Toolbar (Download + Print) --> <div class="w-full flex justify-end gap-4 p-4 sticky top-0 bg-black z-50"> <button onclick="downloadPDF()" class="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">Download</button> <button onclick="window.print()" class="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">Print</button> </div> <div class="page-container"> <div class="resume-wrapper"> <!-- LEFT COLUMN --> <aside class="resume-sidebar"> <!-- Profile Image --> <img src="./assets/QDTeI3.png" alt="Profile Image" class="profile-img"> <div class="sidebar-subtitle">LinkedIn</div> <!-- Summary --> <section class="sidebar-section"> <h3 class="sidebar-heading">Summary</h3> <p> Front End Developer with hands-on experience building responsive web applications. Strong problem-solving, attention to detail, and passion for creating excellent user experiences. </p> </section> <!-- Contact --> <section class="sidebar-section"> <h3 class="sidebar-heading">Contact</h3> <ul> <li>✉ fabrizioterribile@gmail.com</li> <li>📞 562-388-5705</li> <li>💻 github.com/Fab785</li> <li>🔗 linkedin.com/in/fabrizio-terribile</li> <li>🌍 Portfolio (add URL)</li> </ul> </section> <!-- Education --> <section class="sidebar-section"> <h3 class="sidebar-heading">Education</h3> <p> <span class="font-semibold">B.S. Aerospace Engineering</span><br> Virginia Polytechnic Institute and State University<br> <span class="italic">Minor in Mathematics</span><br> 2015 – 2019 </p> </section> <!-- Skills --> <section class="sidebar-section"> <h3 class="sidebar-heading">Skills</h3> <p> React · JavaScript · HTML · CSS · Tailwind · Next.js · Node.js · Git · Responsive Design </p> </section> </aside> <!-- RIGHT COLUMN --> <main class="resume-main"> <!-- Header --> <header class="resume-header"> <h1>Fabrizio Terribile</h1> <p class="subtitle">Frontend Developer 🚀</p> </header> <!-- Work Experience --> <section> <h2 class="section-title">Professional Experience</h2> <div class="job"> <div class="job-header"> <span>IT Support Associate – Amazon, Buena Park CA</span> <span>Dec 2023 – Feb 2024</span> </div> <ul> <li>450+ hours of IT support in a warehouse setting.</li> <li>Distributed, maintained, and troubleshooted IT equipment.</li> <li>Handled 20–30 weekly support tickets via ServiceNow.</li> <li>Provisioned scanners, Kindles, Motorola radios; imaged laptops.</li> <li>Installed and recalibrated Zebra & HP printers, ensured ACME compliance.</li> </ul> </div> <div class="job"> <div class="job-header"> <span>Warehouse Associate – Amazon, Buena Park CA</span> <span>Mar 2020 – Present</span> </div> <ul> <li>Learning Ambassador — trained, coached, and onboarded 3–7 associates simultaneously.</li> <li>Supported operations fulfilling ~100K orders daily in high-pressure environment.</li> <li>Managed inventory, packaging, and shipping with high accuracy.</li> <li>Operated warehouse equipment and enforced safety protocols.</li> <li>Suggested process improvements to optimize efficiency.</li> </ul> </div> </section> <!-- Projects --> <section> <h2 class="section-title">Selected Projects</h2> <div class="job"> <div class="job-header"> <span>Front End Developer | March 2022 – Present</span> </div> <ul> <li><strong>Twitter Clone:</strong> Authentication, tweets, likes, comments, image uploads. <span class="tech">Next.js · Redux · Tailwind · Firebase</span></li> <li><strong>Library:</strong> Mockup e-commerce store with navigation and auto-updating cart. <span class="tech">React · HTML · CSS · JavaScript</span></li> <li><strong>Treact Clone:</strong> Landing page with responsive design and animations. <span class="tech">React · HTML · CSS · JavaScript</span></li> </ul> </div> </section> </main> </div> </div> <!-- Script for PDF download --> <script> function downloadPDF() { window.open("./resume.pdf", "_blank"); } </script> </body> </html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fabrizio Terribile — Resume</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for clean icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnHk6t8mPmq+L1r+6RYPYDw5Y9I+ZT8B+Q9fZ7l+VKvjc9UO3t9KZ4+4F8U6Y4XfL+JmI8N25YhWQbq4WdTQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white font-inter">
+
+  <!-- Toolbar (Download + Print) -->
+  <div class="w-full flex justify-end gap-4 p-4 sticky top-0 bg-black z-50">
+    <button onclick="downloadPDF()" class="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">Download</button>
+    <button onclick="window.print()" class="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">Print</button>
+  </div>
+
+  <div class="page-container">
+    <div class="resume-wrapper">
+      <!-- LEFT COLUMN -->
+      <aside class="resume-sidebar">
+        <!-- Profile Image -->
+        <img src="./assets/QDTeI3.png" alt="Profile Image" class="profile-img">
+        <div class="sidebar-subtitle">Contact</div>
+
+        <!-- Summary -->
+        <section class="sidebar-section">
+          <h3 class="sidebar-heading">Summary</h3>
+          <p>
+            Front End Developer with hands-on experience building responsive web applications.
+            Strong problem-solving, attention to detail, and passion for creating excellent user experiences.
+          </p>
+        </section>
+
+        <!-- Contact with icons -->
+        <section class="sidebar-section">
+          <h3 class="sidebar-heading">Contact</h3>
+          <ul class="space-y-3">
+            <li>
+              <a href="mailto:fabrizioterribile@gmail.com" class="flex items-center gap-2 hover:text-lime-400 transition">
+                <i class="fa-solid fa-envelope"></i> fabrizioterribile@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+15623885705" class="flex items-center gap-2 hover:text-lime-400 transition">
+                <i class="fa-solid fa-phone"></i> 562-388-5705
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Fab785" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-lime-400 transition">
+                <i class="fa-brands fa-github"></i> github.com/Fab785
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/fabrizio-terribile" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-lime-400 transition">
+                <i class="fa-brands fa-linkedin"></i> linkedin.com/in/fabrizio-terribile
+              </a>
+            </li>
+            <li>
+              <a href="https://fab785.github.io/Portfolio/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-lime-400 transition">
+                <i class="fa-solid fa-globe"></i> Portfolio
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Education -->
+        <section class="sidebar-section">
+          <h3 class="sidebar-heading">Education</h3>
+          <p>
+            <span class="font-semibold">B.S. Aerospace Engineering</span><br>
+            Virginia Polytechnic Institute and State University<br>
+            <span class="italic">Minor in Mathematics</span><br>
+            2015 – 2019
+          </p>
+        </section>
+
+        <!-- Skills -->
+        <section class="sidebar-section">
+          <h3 class="sidebar-heading">Skills</h3>
+          <p>
+            React · JavaScript · HTML · CSS · Tailwind · Next.js · Node.js · Git · Responsive Design
+          </p>
+        </section>
+      </aside>
+
+      <!-- RIGHT COLUMN -->
+      <main class="resume-main">
+        <!-- Header -->
+        <header class="resume-header">
+          <h1>Fabrizio Terribile</h1>
+          <p class="subtitle">Frontend Developer 🚀</p>
+        </header>
+
+        <!-- Work Experience -->
+        <section>
+          <h2 class="section-title">Professional Experience</h2>
+          <div class="job">
+            <div class="job-header">
+              <span>IT Support Associate – Amazon, Buena Park CA</span>
+              <span>Dec 2023 – Feb 2024</span>
+            </div>
+            <ul>
+              <li>450+ hours of IT support in a warehouse setting.</li>
+              <li>Distributed, maintained, and troubleshooted IT equipment.</li>
+              <li>Handled 20–30 weekly support tickets via ServiceNow.</li>
+              <li>Provisioned scanners, Kindles, Motorola radios; imaged laptops.</li>
+              <li>Installed and recalibrated Zebra & HP printers, ensured ACME compliance.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <span>Warehouse Associate – Amazon, Buena Park CA</span>
+              <span>Mar 2020 – Present</span>
+            </div>
+            <ul>
+              <li>Learning Ambassador — trained, coached, and onboarded 3–7 associates simultaneously.</li>
+              <li>Supported operations fulfilling ~100K orders daily in high-pressure environment.</li>
+              <li>Managed inventory, packaging, and shipping with high accuracy.</li>
+              <li>Operated warehouse equipment and enforced safety protocols.</li>
+              <li>Suggested process improvements to optimize efficiency.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section>
+          <h2 class="section-title">Selected Projects</h2>
+          <div class="job">
+            <div class="job-header">
+              <span>Front End Developer | March 2022 – Present</span>
+            </div>
+            <ul>
+              <li><strong>Twitter Clone:</strong> Authentication, tweets, likes, comments, image uploads. <span class="tech">Next.js · Redux · Tailwind · Firebase</span></li>
+              <li><strong>Library:</strong> Mockup e-commerce store with navigation and auto-updating cart. <span class="tech">React · HTML · CSS · JavaScript</span></li>
+              <li><strong>Treact Clone:</strong> Landing page with responsive design and animations. <span class="tech">React · HTML · CSS · JavaScript</span></li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- Script for PDF download -->
+  <script>
+    function downloadPDF() {
+      window.open("./resume.pdf", "_blank");
+    }
+  </script>
+</body>
+</html>
+
 
 
 
