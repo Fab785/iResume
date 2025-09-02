@@ -1,0 +1,159 @@
+/* General reset */
+body {
+    font-family: 'Inter', sans-serif;
+    background: #000; /* black background under the resume */
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Page container */
+  .page-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  /* Resume wrapper */
+  .resume-wrapper {
+    width: 210mm;
+    height: 297mm;
+    background: #fff;
+    display: flex;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    overflow: hidden;
+  }
+  
+  /* Sidebar */
+  .resume-sidebar {
+    width: 32%;
+    background: #1c3d6e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 24px;
+  }
+  
+  .profile-img {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .sidebar-subtitle {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: 0.8;
+    margin-bottom: 28px;
+  }
+  
+  .sidebar-section {
+    width: 100%;
+    margin-bottom: 28px;
+    font-size: 0.75rem;
+  }
+  
+  .sidebar-heading {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+  }
+  
+  .sidebar-section ul {
+    padding-left: 0;
+    list-style: none;
+  }
+  .sidebar-section li {
+    margin-bottom: 4px;
+  }
+  
+  /* Main content */
+  .resume-main {
+    flex: 1;
+    padding: 32px 40px;
+  }
+  
+  .resume-header {
+    text-align: center;
+    border-bottom: 4px solid #1c3d6e;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+  }
+  
+  .resume-header h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1c3d6e;
+    margin: 0;
+  }
+  
+  .resume-header .subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4b5563;
+    margin-top: 6px;
+  }
+  
+  /* Sections */
+  .section-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1c3d6e;
+    margin-bottom: 12px;
+  }
+  
+  .job {
+    margin-bottom: 20px;
+  }
+  
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #111827;
+  }
+  
+  .job ul {
+    margin-top: 6px;
+    padding-left: 18px;
+    font-size: 0.85rem;
+    color: #374151;
+  }
+  
+  .job ul li {
+    margin-bottom: 4px;
+  }
+  
+  .tech {
+    display: block;
+    font-size: 0.7rem;
+    color: #6b7280;
+    margin-top: 2px;
+  }
+  
+  /* Print styles */
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  
+  @media print {
+    body {
+      background: #fff !important;
+    }
+    .page-container {
+      padding: 0;
+    }
+    .resume-wrapper {
+      box-shadow: none;
+    }
+  }
+  
