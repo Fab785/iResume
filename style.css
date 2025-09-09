@@ -17,13 +17,14 @@ body {
 /* Resume wrapper */
 .resume-wrapper {
   width: 100%;
-  max-width: 210mm;        /* keep A4 width in browser */
+  max-width: 210mm;   /* limit width to A4 */
   background: #fff;
   display: flex;
   flex-direction: row;
   box-shadow: 0 0 20px rgba(0,0,0,0.4);
-  overflow: visible;       /* allow content to extend */
-  min-height: 297mm;       /* at least A4 tall, but grows if needed */
+  overflow: visible;
+  min-height: 100vh;   /* let it expand */
+  height: auto;        /* no fixed cutoff */
 }
 
 /* Sidebar */
@@ -150,16 +151,15 @@ body {
 @media print {
   body {
     background: #fff !important;
-    padding: 0;
   }
   .page-container {
     padding: 0;
   }
   .resume-wrapper {
     width: 210mm;
-    height: 297mm; /* force single A4 page */
+    height: 297mm;  /* lock A4 on print */
+    overflow: hidden;
     box-shadow: none;
-    overflow: hidden; /* cut off overflow in PDF */
   }
 }
 
