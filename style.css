@@ -16,10 +16,11 @@ body {
 
 /* Resume wrapper */
 .resume-wrapper {
-  width: 210mm;
-  height: 297mm;
+  width: 100%;
+  max-width: 210mm;       /* cap at A4 width */
   background: #fff;
   display: flex;
+  flex-direction: row;
   box-shadow: 0 0 20px rgba(0,0,0,0.4);
   overflow: hidden;
 }
@@ -148,11 +149,30 @@ body {
 @media print {
   body {
     background: #fff !important;
+    padding: 0;
   }
   .page-container {
     padding: 0;
   }
   .resume-wrapper {
+    width: 210mm;
+    height: 297mm;
     box-shadow: none;
+  }
+}
+
+/* Small screen fix */
+@media (max-width: 768px) {
+  .resume-wrapper {
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+  }
+  .resume-sidebar {
+    width: 100%;
+    text-align: center;
+  }
+  .resume-main {
+    padding: 20px;
   }
 }
